@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khảo sát ý kiến khách hàng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <header class="form-header">
+      <h2>Khảo sát ý kiến khách hàng</h2>
+      <p>Vui lòng dành chút thời gian phản hồi để giúp chúng tôi nâng cao chất lượng dịch vụ.</p>
+    </header>
+
+    <form action="#" method="POST">
+      <!-- Họ và tên -->
+      <div class="form-group">
+        <label class="label-title">Họ và tên <span class="required">*</span></label>
+        <div class="name-fields">
+          <input type="text" name="firstName" placeholder="Họ và tên đệm" required>
+          <input type="text" name="lastName" placeholder="Tên" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email" class="label-title">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <!-- Bảng đánh giá mức độ hài lòng -->
+      <div class="form-group">
+        <label class="label-title">Mức độ hài lòng của bạn về dịch vụ <span class="required">*</span></label>
+        <div class="table-responsive">
+          <table class="rating-table">
+            <thead>
+              <tr>
+                <th>Tiêu chí</th>
+                <th>Rất không hài lòng</th>
+                <th>Không hài lòng</th>
+                <th>Bình thường</th>
+                <th>Hài lòng</th>
+                <th>Rất hài lòng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chất lượng sản phẩm</td>
+                <td><input type="radio" name="product_quality" value="1" required></td>
+                <td><input type="radio" name="product_quality" value="2"></td>
+                <td><input type="radio" name="product_quality" value="3"></td>
+                <td><input type="radio" name="product_quality" value="4"></td>
+                <td><input type="radio" name="product_quality" value="5"></td>
+              </tr>
+              <tr>
+                <td>Thái độ phục vụ</td>
+                <td><input type="radio" name="service_attitude" value="1" required></td>
+                <td><input type="radio" name="service_attitude" value="2"></td>
+                <td><input type="radio" name="service_attitude" value="3"></td>
+                <td><input type="radio" name="service_attitude" value="4"></td>
+                <td><input type="radio" name="service_attitude" value="5"></td>
+              </tr>
+              <tr>
+                <td>Tốc độ phản hồi</td>
+                <td><input type="radio" name="response_speed" value="1" required></td>
+                <td><input type="radio" name="response_speed" value="2"></td>
+                <td><input type="radio" name="response_speed" value="3"></td>
+                <td><input type="radio" name="response_speed" value="4"></td>
+                <td><input type="radio" name="response_speed" value="5"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Góp ý thêm -->
+      <div class="form-group">
+        <label for="feedback" class="label-title">Ý kiến đóng góp hoặc đề xuất</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Nhập ý kiến của bạn tại đây..."></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn-submit">Gửi khảo sát</button>
+    </form>
+  </div>
+</body>
+</html>
